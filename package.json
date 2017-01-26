@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Movie Review Application",
   "scripts": {
-    "start": "webpack-dev-server --hot"
+    "start": "node server.js"
   },
-  "author": "Rahul Guta",
+  "author": "Rahul Gupta",
   "license": "MIT",
   "dependencies": {
     "babel-polyfill": "6.8.0",
