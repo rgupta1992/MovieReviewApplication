@@ -8,7 +8,7 @@ var config = {
 
     devServer: {
         inline: true,
-        port: 5433
+        port: 8080
     },
 
     module: {
@@ -27,3 +27,6 @@ var config = {
 }
 
 module.exports = config;
+
+
+;
