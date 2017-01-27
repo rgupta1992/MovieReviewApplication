@@ -5,6 +5,9 @@
 #stats-frame{
     
 }
+.well h4{
+    color: #1abc9c;
+}
 .floatleft { float: left }
 .floatright { float: right }
 .alignleft {
@@ -326,6 +329,7 @@ z-index: 9;
     line-height: 25px;
     margin-bottom: 10px;
     margin-top: 15px;
+    color: #1abc9c;
 }
 
 

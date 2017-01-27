@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Movie Review Application",
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server --hot"
   },
   "author": "Rahul Gupta",
   "license": "MIT",
@@ -18,11 +18,13 @@
     "react-d3-cloud": "^0.4.1",
     "react-dom": "^15.4.2",
     "react-image-slider": "^0.1.0",
+    "react-rating": "^0.6.5",
     "react-redux": "4.4.5",
     "react-router": "2.4.0",
     "react-router-redux": "4.0.4",
     "react-slick": "^0.14.5",
     "react-star-rating": "^1.4.2",
+    "react-star-rating-component": "^1.2.2",
     "react-stars": "^2.1.0",
     "react-tagcloud": "^1.0.0",
     "react-wordcloud": "0.0.1",
