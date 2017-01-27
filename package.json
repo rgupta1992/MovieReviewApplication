@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Movie Review Application",
   "scripts": {
-    "start": "node server.js"
+    "start": "webpack-dev-server"
   },
   "author": "Rahul Gupta",
   "license": "MIT",
@@ -11,6 +11,7 @@
     "babel-polyfill": "6.8.0",
     "bootstrap": "3.3.6",
     "chart.js": "^1.1.1",
+    "errno": "^0.1.4",
     "jquery": "2.2.3",
     "react": "^15.4.2",
     "react-chartjs": "^0.8.0",

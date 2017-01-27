@@ -1,15 +1,10 @@
 #wordcloud-frame{
-    width: 15%;
-    margin-left: 80%;
+
 }
 
 #stats-frame{
-    width: 45%;
-    margin-left: 80%;
-
+    
 }
-
-
 .floatleft { float: left }
 .floatright { float: right }
 .alignleft {
@@ -382,7 +377,7 @@ z-index: 9;
   padding: 1px 10px;
 }
 
-.maincontent-area {padding-bottom: 170px}
+.maincontent-area {padding-bottom: 50px}
 
 .product-wid-title {
   font-family: raleway;

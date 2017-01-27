@@ -14,11 +14,8 @@ var MovieSlider = React.createClass({
     },
 
     render(){
-        return(            
-            <div className="maincontent-area">
-
-                <div className="container">
-                    <div className="row">
+        return(
+			<div className="row">
                         <div className="col-md-12">
                             <div className="latest-product">
                                 <br /><br />
@@ -66,8 +63,6 @@ var MovieSlider = React.createClass({
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>                 
     );
     }
 });
@@ -134,7 +129,6 @@ var StatsComponent = React.createClass({
         }
         return(
             <div id="stats-frame">
-
                 <ReactStars
                     count = {5}
                     onChange={3}
@@ -143,7 +137,6 @@ var StatsComponent = React.createClass({
                     edit = {false}
                     active = {2}
                     />
-
                 <PolarAreaChart data={chartData2} />
                 <div><StarRating name="movie-rating" caption="Rating" ratingAmount={5} rating ={3} size = {20} editing={false}/></div>
             </div>
@@ -191,7 +184,6 @@ var WordCloudComponent = React.createClass({
                           maxSize={35}
                           colorOptions={options}
                           tags={data}
-                          style={{width: 150, textAlign: 'left'}}
                           onClick={tag => console.log('clicking on tag:', tag)} />
             </div>
         );
@@ -320,12 +312,18 @@ var MovieReview = React.createClass({
 
     render(){
         return (
-            <div>
+            <div className="col-lg-12 col-md-12">
                 <MovieSlider getMovieName = {this.getMovieName}/>
-                <AddReview addReview = {this.addReview} movieName = {this.state.movieName} />
-                <AllReviews reviews = {this.state.reviewList}/>
-                <WordCloudComponent />
-                <StatsComponent reviews = {this.state.reviewList} movieName = {this.state.movieName}/>
+			<div className="row">
+				<div className="col-lg-8 col-md-8">
+                		<AddReview addReview = {this.addReview} movieName = {this.state.movieName} />
+		                <AllReviews reviews = {this.state.reviewList}/>
+				</div>
+				<div className="col-lg-4 col-md-4">
+     		           	<WordCloudComponent />
+           	     		<StatsComponent reviews = {this.state.reviewList} movieName = {this.state.movieName}/>
+				</div>
+			</div>
             </div>
         );
     }
