@@ -42,14 +42,21 @@ var MovieReview = React.createClass({
 
     addReview(newReview)
     {
-        this.setState({reviewTxt: newReview});
+        console.log('got new review and refreshing things');
+        this.setState({
+            reviewTxt: newReview,
+            isVisible : false
+        });
         this.getCompleteDataFromServer();
     },
     
     getMovieName(movie)
     {
         console.log('in get movie name method::', movie);
-        this.setState({movieName: movie})
+        this.setState({
+            movieName: movie,
+            isVisible : true
+        });
         this.getCompleteDataFromServer();
     },
 

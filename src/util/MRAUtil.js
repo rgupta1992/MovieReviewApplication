@@ -36,8 +36,8 @@ export function getDataFromServer(movieName, reviewTxt)
                 }
             ],
             "reviewsCount": {
-                "positive": 60,
-                "negative": 40
+                "positive": 70,
+                "negative": 30
             },
             "cloudTags": [
                 { value: "Zootopia", count: 10 }, { value: "Star Wars", count: 13 },

@@ -12,18 +12,16 @@ var AddReview = React.createClass({
     },
 
     handleSubmit(e){
+        console.log("handling submit");
         e.preventDefault();
-        this.props.addReview(newReview);
+        this.props.addReview(this.state.newReview);
         this.setState({newReview: ''});
-        React.findDOMNode(this.refs.newItem).focus();
-
         return;
     },
 
     onChange(e){
         console.log(e.target.value);
         this.setState({newReview: e.target.value});
-
     },
 
     render(){
