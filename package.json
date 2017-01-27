@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Movie Review Application",
   "scripts": {
-    "start": "webpack-dev-server --hot"
+  "bundle": "webpack --config webpack.config.js",
+  "prestart": "npm run bundle",
+  "start": "node server.js",
+  "deploy": "gcloud app deploy --project "
   },
   "author": "Rahul Gupta",
   "license": "MIT",
@@ -33,9 +36,7 @@
     "slick-carousel": "^1.6.0",
     "toastr": "2.1.2",
     "webpack": "^1.13.0",
-    "webpack-dev-server": "^1.16.2"
-  },
-  "devDependencies": {
+    "webpack-dev-server": "^1.16.2",
     "babel-cli": "6.8.0",
     "babel-core": "6.8.0",
     "babel-loader": "6.2.4",
@@ -69,10 +70,13 @@
     "rimraf": "2.5.2",
     "style-loader": "0.13.1",
     "url-loader": "0.5.7",
-    "webpack": "1.13.0",
+    
     "webpack-dev-middleware": "1.6.1",
     "webpack-hot-middleware": "2.10.0",
     "word-cloud": "0.0.3"
+  },
+  "devDependencies": {
+    
   },
   "repository": {
     "type": "git",
