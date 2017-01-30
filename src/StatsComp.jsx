@@ -35,9 +35,9 @@ var StatsComponent = React.createClass({
                                 step={1} empty={['fa fa-star-o fa-2x low', 'fa fa-star-o fa-2x low',
                             'fa fa-star-o fa-2x medium', 'fa fa-star-o fa-2x medium',
                             'fa fa-star-o fa-2x high', 'fa fa-star-o fa-2x high']}
-                                full={['fa fa-star fa-2x low', 'fa fa-star fa-2x low',
-                                    'fa fa-star fa-2x medium', 'fa fa-star fa-2x medium',
-                                    'fa fa-star fa-2x high', 'fa fa-star fa-2x high']}/>
+                                full={['fa fa-star fa-2x low coltest', 'fa fa-star fa-2x low coltest',
+                                    'fa fa-star fa-2x medium coltest', 'fa fa-star fa-2x medium coltest',
+                                    'fa fa-star fa-2x high coltest', 'fa fa-star fa-2x high coltest']}/>
                     </div>
                 </div>
             );
