@@ -1061,5 +1061,8 @@ display: table-cell;     padding: 1%; width:50%;
 .log_cell_inp_register input[type="text"],.log_cell_inp_register input[type="password"],.log_cell_inp_register input[type="tel"], .log_cell_inp_register select {
     width: 100%;
 }
+.coltest{
+	color: #1abc9c;
+}
 
 
